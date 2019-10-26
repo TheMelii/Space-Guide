@@ -2,8 +2,7 @@
 <html lang="en">
 
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>Galaxies</title>
@@ -13,7 +12,6 @@
 
 
     <header>
-
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <ul class="navbar-nav mr-auto">
@@ -29,14 +27,60 @@
           </ul>
         </div>
       </nav>
-
-      <br>
-      <br>
-
     </header>
 
-    <footer>
+    <div class="map">
+      <img src="Media/solar system.png" width="80%" height="50%" alt="Solar System" usemap="#solarsystemmap">
+      <map name="solarsystemmap">
+        <area shape="poly" alt="Sun" href="#Sun" coords="1,144,20,156,42,180,64,216,75,243,85,277,91,302,94,333,93,370,85,399,73,444,48,485,33,498,20,498,1,498,4,169,-1,307,3,257,0,228">
+        <area shape="circle" alt="Mercury" href="#Mercury" coords="120,216,8">
+        <area shape="circle" alt="Venus" href="#Venus" coords="151,202,11">
+        <area shape="circle" alt="Earth" href="#Earth" coords="188,184,14">
+        <area shape="circle" alt="Mars" href="#Mars" coords="222,170,10">
+        <area shape="circle" alt="Jupiter" href="#Jupiter" coords="403,305,60">
+        <area shape="poly" alt="Saturn" href="#Saturn" coords="484,237,506,225,521,216,534,199,548,192,558,187,573,187,581,188,589,193,595,193,606,190,616,189,625,189,637,186,649,188,660,194,660,203,654,212,643,221,630,228,621,233,613,238,605,241,601,250,593,257,581,263,573,266,560,269,549,269,541,262,527,266,512,266,505,268,494,269,481,269,472,268,465,257,469,248,473,243,492,231">
+        <area shape="poly" alt="Uranus" href="#Uranus" coords="681,166,685,154,690,146,698,145,698,132,701,127,704,121,707,126,712,133,713,142,717,146,723,155,728,161,731,171,729,182,722,191,716,194,709,197,710,204,709,213,703,217,698,205,695,196,687,189,681,178">
+        <area shape="circle" alt="Neptune" href="#Neptune" coords="779,136,24">
+      </map>
+    </div>
 
+    <p id="Sun"> <h2> The Sun </h1> <br>
+    </p>
+
+    <p id="Mercury"> <h2> Mercury </h2> <br>
+    </p>
+
+    <p id="Venus"> <h2> Venus </h2> <br>
+    </p>
+
+    <p id="Earth"> <h2> Earth </h2> <br>
+    </p>
+
+    <p id="Mars"> <h2> Mars </h2> <br>
+    </p>
+
+    <p id="Jupiter"> <h2> Jupiter </h2> <br>
+    </p>
+
+    <p id="Saturn"> <h2> Saturn </h2> <br>
+    </p>
+
+    <p id="Uranus"> <h2> Uranus </h2> <br>
+    </p>
+
+    <p id="Neptune"> <h2> Neptune </h2> <br>
+    </p>
+
+    <footer>
+      <nav class="navbar fixed-bottom navbar-expand-lg navbar-light">
+        <div class="container-fluid" >
+          <ul class="navbar-nav mr-auto" id="bottom">
+            <li class="nav-item"> <a class="nav-link" href="Page 9.html">Contact</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="Page 10.html">Privacy Policy</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="Page 11.html">Disclaimer</a> </li>
+          </ul>
+        </div>
+        </nav>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
