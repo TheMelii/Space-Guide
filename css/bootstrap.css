@@ -4,24 +4,19 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
-.glyphicon glyphicon-edit{
-  content:"\e085";
 }
- body{
-   background-image: url("../Media/background.jpg");
-   background-size:cover;
-   background-repeat: no-repeat;
-   background-
- }
 
- *{
- font-family: 'Montserrat', sans-serif;
- }
+.maintextplanets {
+  align-items: center;
+}
+
+*{
+  font-family:"Montserrat", sans-serif;
+}
 
  header{
-   background-color: #061727;;
-   background-size: cover;
+   background-color: #061727;
+
    margin-top: 40px;
    margin-bottom: 5px;
    margin-left: 25px;
@@ -50,10 +45,6 @@ li.nav-item{
   list-style: none;
   justify-content: center;
   }
-
-.map{
-  
-}
 
 :root {
   --blue: #007bff;
@@ -117,7 +108,8 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-image: url("../Media/Background.jpg");
+  background-size: cover;
 }
 
 [tabindex="-1"]:focus {
@@ -5892,7 +5884,6 @@ button.close {
 .carousel-item {
   margin-right: 70px;
   margin-left: 150px;
-
   position:relative;
   display: none;
   -ms-flex-align: center;
