@@ -10,7 +10,6 @@
   background-color: #061727;
 }
 
-
 *{
   font-family:"Montserrat", sans-serif;
 }
@@ -38,6 +37,10 @@ li.nav-item:not(:last-child){
   border-right:1px solid white;
 }
 
+i.fa-instagram::before {
+  color:White;
+  background-color: transparent;
+}
 
 .solar-system-map {
 
@@ -56,6 +59,15 @@ li.nav-item:not(:last-child){
   margin-bottom: 0;
   list-style: none;
   justify-content: center;
+  }
+
+  #Nebula{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    display: inline;
+    float: left;
+    flex: 25%;
   }
 
 :root {
@@ -113,7 +125,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
-  margin: 0;
+  margin:0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
@@ -122,6 +134,14 @@ body {
   text-align: left;
   background-image: url("../Media/Background.jpg");
   background-size: cover;
+  background-position: absolute;
+}
+
+main{
+  margin-top:15px;
+  margin-bottom:15px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 [tabindex="-1"]:focus {
@@ -659,13 +679,10 @@ pre code {
   display: block;
 }
 
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+@media screen and (max-width: 500px) {
+  #Nebula {
+    width: 100%;
+  }
 }
 
 .no-gutters {
