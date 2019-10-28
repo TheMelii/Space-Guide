@@ -24,14 +24,37 @@
  }
 
 footer{
-  margin-top: 10 px;
+  margin-top: 10px;
   bottom:0;
   margin-bottom: 0px;
-  position: fixed;
+  left:0;
+  right:0;
+  align-content: center;
+  color:white;
 }
 
-li.nav-item{
-  border-right:1px solid grey;}
+
+li.nav-item:not(:last-child){
+  border-right:1px solid white;
+}
+
+
+.map{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.solar-system-map {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .nav-navbar {
@@ -645,6 +668,7 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
   justify-content: center;
+  display: block;
 }
 
 .row {
@@ -5910,6 +5934,10 @@ button.close {
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  border-style: solid;
+  border-color: white;
+  border-width:5px;
+  border-radius: 5px;
 }
 
 .carousel-item.active,
