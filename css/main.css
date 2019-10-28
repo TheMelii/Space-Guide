@@ -33,11 +33,9 @@ footer{
   color:white;
 }
 
-
 li.nav-item:not(:last-child){
   border-right:1px solid white;
 }
-
 
 .map{
   margin-top: 30px;
