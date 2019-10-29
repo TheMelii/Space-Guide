@@ -121,6 +121,12 @@ i.fa-youtube,i.fa-facebook,i.fa-instagram,i.fa-twitter {
   box-sizing: border-box;
 }
 
+.copyright{
+  text-align: center;
+  margin-top: 30px;
+  margint-bottom:40px;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -188,8 +194,10 @@ h1 {
   display: inline-block;
 }
 
-h1.index-heading{
-  border-bottom: 1px white solid;
+.hr-index-heading{
+margin-top: 0;
+width:25%;
+margin-bottom: 20px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -549,7 +557,8 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #fff;
+  width: 50%;
 }
 
 small,
