@@ -6,6 +6,15 @@
  */
 }
 
+
+.solar-system-map{
+  text-align: center;
+}
+
+.carousel-slide{
+  margin-top:15px;
+}
+
 .maintextplanets {
   background-color: #061727;
 }
@@ -23,24 +32,14 @@
    border-radius: 60px;
  }
 
-footer{
-  margin-top: 10px;
-  bottom:0;
-  margin-bottom: 0px;
-  left:0;
-  right:0;
-  align-content: center;
-  color:white;
-}
-
 li.nav-item:not(:last-child){
   border-right:1px solid white;
 }
 
-i.fa-instagram::before {
+i.fa-youtube,i.fa-facebook,i.fa-instagram,i.fa-twitter {
   color:White;
-  background-color: transparent;
 }
+
 
 .solar-system-map {
 
@@ -120,6 +119,16 @@ html {
   width: device-width;
 }
 
+footer{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  left:0;
+  right:0;
+  align-content: center;
+  color:white;
+  bottom:0;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -142,6 +151,7 @@ main{
   margin-bottom:15px;
   margin-left: 80px;
   margin-right: 80px;
+  color:white;
 }
 
 [tabindex="-1"]:focus {
@@ -158,6 +168,13 @@ h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   color: #6fa9c7;
+  padding-bottom: 5px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+h1.index-heading{
+  border-bottom: 1px white solid;
 }
 
 h2, h3, h4, h5, h6 {
