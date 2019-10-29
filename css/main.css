@@ -3110,6 +3110,11 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
+.dropdown-menu:hover{
+  color:#6fa9c7;
+  background-color:transparent;
+}
+
 .dropdown-menu-right {
   right: 0;
   left: auto;
@@ -4272,6 +4277,8 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
     justify-content: center;
+    align-items: center;
+    align-text:center;
   }
 }
 
