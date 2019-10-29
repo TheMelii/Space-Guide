@@ -197,7 +197,6 @@ h1 {
 .hr-index-heading{
 margin-top: 0;
 width:25%;
-margin-bottom: 20px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -558,7 +557,7 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid #fff;
-  width: 50%;
+  width: 40%;
 }
 
 small,
