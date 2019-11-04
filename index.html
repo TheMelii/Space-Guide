@@ -3,7 +3,8 @@
 
   <head>
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link href="http://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" >
+    <script src="js/bootstrap.js"></script>
+    <script src="jquery-3.4.1.min.js"> </script>
     <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta charset="utf-8">
@@ -48,27 +49,49 @@
           </button>
         </a>
         </div>
-      </nav>
+        </nav>
+
+        <div class="text-center">
+          <p>
+          <h1 class="index-heading"> Welcome to your Space-Guide</h1>
+          <hr class="hr-index-heading">
+        </div>
     </header>
 
-
     <main>
-    <div class="main text-center">
-      <p>
-      <h1 class="index-heading"> Welcome to your Space-Guide</h1>
-      <hr class="hr-index-heading">
+      <div class="quotes-slideshow">
 
-    </div>
+        <div class="quotes">
+           <q style="color:#ffffffb3"> We choose to go to the moon. We choose to go to the moon in this decade... not because they are easy but because they are hard</q>
+           <p class="author">- John F. Kennedy, 1962  </p>
+        </div>
 
-    <div id="carouselhome" class="carousel-slide" data-ride="carousel">
-      <ol class="carousel-indicators">
+        <div class="quotes">
+          <q style="color:#ffffffb3"> Only two things are infinite, the universe and human stupidity, and I'm not sure about the former.</q>
+          <p class="author">- Albert Einstein </p>
+        </div>
+
+        <div class="quotes">
+          <q style="color:#ffffffb3"> Astronomy taught us our insignificance in Nature.</q>
+          <p class="author">- Ralph Waldo Emerson </p>
+        </div>
+
+        <div class="quotes">
+          <q style="color:#ffffffb3"> Space is for everybody. It’s not just for a few people in science or math, or for a select group of astronauts. That’s our new frontier out there, and it’s everybody’s business to know about space.</q>
+          <p class="author">- Christa McAuliffe </p>
+        </div>
+
+      </div>
+
+    <div id="carouselhome" class="carousel-slide" data-ride="carousel" style="padding-bottom:5%">
+      <ol class="carousel-indicators" style="text-align:center">
         <li data-target="#carouselhome" data-slide-to="0" class="active"></li>
         <li data-target="#carouselhome" data-slide-to="1"></li>
         <li data-target="#carouselhome" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner mx-auto">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="Media/Milky Way.jfif." alt="First slide">
+          <img class="d-block w-100 justify-content-center" src="Media/Milky Way.jfif." alt="First slide">
           <div class="carousel-caption d-none d-md-block">
             <h5>Milky Way</h5>
             <p>Our Solar System is in the Milky Way. The Milky Way is a Spiral Galaxy.
@@ -77,20 +100,19 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="Media/Solar System.jpeg" alt="Second slide">
+          <img class="d-block w-100 justify-content-center" src="Media/Solar System.jpeg" alt="Second slide">
           <div class="carousel-caption d-none d-md-block">
             <h5>Solar System</h5>
             <p>In the center of our Solar System is one big star called 'the Sun'. The Sun is surrounded by eight planets and their moons.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="Media/Supernova.jpg" alt="Third slide">
+          <img class="d-block w-100 justify-content-center" src="Media/Supernova.jpg" alt="Third slide">
           <div class="carousel-caption d-none d-md-block">
             <h5>Supernova</h5>
             <p>A Supernova happens when a star collapses, also called a dying star.</p>
           </div>
         </div>
-
       </div>
       <a class="carousel-control-prev" href="#carouselhome" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -101,16 +123,23 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <div>
+
+    <div style="text-align:center">
       <p class="About">
+
         <h1>About </h1>
+        <hr>
         <h2> This Website is here to tell you all you need to now about space! </h2> <br>
         <h3>Starting at the place where we all live on- the Earth <i class="fas fa-globe-americas"></i>,<br>
         continuing with our solar system <i class="fas fa-sun"></i> <i class="fas fa-meteor"></i>, <br>
         going beyond deep space to the infinity of our universe <i class="fas fa-star"></i>. <br>
         </p>
         <p>
-        For any further information or questions <a href="https://www.esa.int"><code style="color:#e83e8c"> >Go and visit the ESA Website< </code> </h3> </a>
+        For any further information or questions
+        <p>
+          <div class="astro-gif"><iframe src="https://giphy.com/embed/Js7cqIkpxFy0bILFFA" class="giphy-embed" ></iframe></div>
+          <br>
+          <a href="https://www.esa.int"><code style="color:#e83e8c"> >Go and visit the ESA Website< </code> </h3> </a>
       </p>
     </div>
   </main>
@@ -134,8 +163,6 @@
     </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
 
   </body>
 
