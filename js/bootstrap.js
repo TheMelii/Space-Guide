@@ -5,16 +5,17 @@
   */
 
 
+
 $(".quotes-slideshow > div:gt(0)").hide();
 
 setInterval(function() {
   $('.quotes-slideshow > div:first')
-    .fadeOut(3000)
+    .fadeOut(1000)
     .next()
-    .fadeIn(3000)
+    .fadeIn(1000)
     .end()
     .appendTo('.quotes-slideshow');
-}, 12000);
+}, 3000);
 
 anime.timeline({loop: true})
   .add({
@@ -648,32 +649,6 @@ anime.timeline({loop: true})
 
     };
 
-    var Carousel =
-    /*#__PURE__*/
-    function () {
-      function Carousel(element, config) {
-        this._items = null;
-        this._interval = null;
-        this._activeElement = null;
-        this._isPaused = false;
-        this._isSliding = false;
-        this.touchTimeout = null;
-        this._config = this._getConfig(config);
-        this._element = $$$1(element)[0];
-        this._indicatorsElement = this._element.querySelector(Selector.INDICATORS);
-
-        this._addEventListeners();
-      } // Getters
-
-
-      var _proto = Carousel.prototype;
-
-      // Public
-      _proto.next = function next() {
-        if (!this._isSliding) {
-          this._slide(Direction.NEXT);
-        }
-      };
 
       _proto.nextWhenVisible = function nextWhenVisible() {
         // Don't call next when the page isn't visible
