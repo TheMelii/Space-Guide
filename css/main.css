@@ -78,18 +78,18 @@ html {
 
 /*Body*/
 body {
-  margin: 0;
   font-family:"Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: white;
   text-align: left;
   background-color: #fff;
   min-width: 992px !important;
   background-image: url("../Media/Background.jpg");
-  background-size: cover;
-  background-position: absolute;
+  background-size:cover;
+  background-position:center;
+  background-attachment: fixed;
 }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -98,13 +98,12 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 /*header*/
 header {
-  margin-top: 40px;
-  margin-bottom: 5px;
+  margin-top: 20px;
   margin-left: 150px;
   margin-right: 150px;
-  padding-top: 20px;
-  padding-bottom:20px;
-  background-color: white;
+  padding-top: 10px;
+  background-color:#ffffff33;
+  border-radius: ;
 }
 
 /*main*/
@@ -117,34 +116,38 @@ main {
 
 /*footer*/
 footer {
-  margin-top: 10px;
+  margin-top:20px;
   margin-bottom: 0px;
-  margin-left: 100px;
-  margin-right:100px;
   left:0;
   right:0;
   align-content: center;
   color:white;
   bottom:0;
   text-align: center;
+  background-color:#ffffff33;
+}
+
+.which{
+
 }
 
 .quotes-slideshow{
-  background-color:white;
-  margin-bottom: 30px;
-}
-
-.image-slideshow{
-  background-color:white;
-  width: 100%;
-  height:100%;
   margin-bottom: 30px;
 }
 
 .about{
-  background-color:White;
   margin-top: 10px;
   padding-top: 10px;
+}
+
+.container p-t-3{
+  background-color:White;
+  margin-top: 10px;
+}
+
+#postsCarousel{
+  background-color:White;
+  margin-top: 10px;
 }
 
 [tabindex="-1"]:focus {
@@ -217,7 +220,7 @@ dd {
   position: relative;
   width:100%;
   size: auto;
-  color:black;
+  color:white;
 }
 
 /*Author name for quotes in navbar top/Index Page*/
@@ -497,6 +500,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2rem;
+  color: #6FA8C7;
 }
 
 h3, .h3 {
@@ -513,6 +517,7 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+  color:white;
 }
 
 .lead {
@@ -546,9 +551,9 @@ h6, .h6 {
 
 hr {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid white;
 }
 
 small,
@@ -605,6 +610,8 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
 }
 
 .img-thumbnail {
@@ -3257,6 +3264,12 @@ tbody.collapse.show {
 .dropup,
 .dropdown {
   position: relative;
+    text-align: center;
+}
+
+li.dropdown{
+    text-align: center;
+    margin: auto;
 }
 
 .dropdown-toggle::after {
@@ -4506,6 +4519,10 @@ tbody.collapse.show {
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: #6FA8C7;
+  margin-top:2px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid white;
+  border-width:60%;
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
@@ -4589,13 +4606,19 @@ tbody.collapse.show {
 }
 
 /*Border for Navbar*/
-li.nav-item:not(:last-child){
+/*li.nav-item:not(:last-child){
   border-right:1px solid white;
 }
+
+li.dropdown{
+  border-right:1px solid white;
+  text-align: center;
+}*/
 
 li.nav-item {
   margin-bottom:auto;
   margin-top: auto;
+  text-align:center;
 }
 
 .card {
@@ -4609,10 +4632,10 @@ li.nav-item {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: black;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 1rem;
 }
 
 .card > hr {
@@ -9148,10 +9171,14 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top:2px;
   padding-bottom: 2px;
   border-bottom: 2px solid white;
-
+}
 /*Color:White for Icons in Contact Page*/
 i.fa-youtube,i.fa-facebook,i.fa-instagram,i.fa-twitter {
   color:White;
+}
+
+i.fa-chevron-left, i.fa-chevron-right {
+  color:#6FA8C7;
 }
 
 .further-info{
