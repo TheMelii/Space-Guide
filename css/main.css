@@ -87,9 +87,9 @@ body {
   text-align: left;
   background-color: #fff;
   min-width: 992px !important;
-  /*background-image: url("../Media/Background.jpg");
+  background-image: url("../Media/Background.jpg");
   background-size: cover;
-  background-position: absolute;*/
+  background-position: absolute;
 }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -98,12 +98,12 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 /*header*/
 header {
-  background-color: #061727;
   margin-top: 40px;
   margin-bottom: 5px;
-  margin-left: 25px;
-  margin-right: 25px;
-  border-radius: 60px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-bottom:10px;
+  background-color: white;
 }
 
 /*main*/
@@ -112,18 +112,21 @@ main {
   margin-bottom:15px;
   margin-left: 80px;
   margin-right: 80px;
-  color:white;
+  background-color:white;
 }
 
 /*footer*/
 footer {
   margin-top: 10px;
   margin-bottom: 0px;
+  margin-left: 80px;
+  margin-right:80px;
   left:0;
   right:0;
   align-content: center;
   color:white;
   bottom:0;
+  text-align: center;
 }
 
 [tabindex="-1"]:focus {
@@ -196,6 +199,39 @@ dd {
   margin-bottom: .5rem;
   margin-left: 0;
 }
+
+.quotes{
+  display:block;
+  margin: auto;
+  position: relative;
+  width:100%;
+  size: auto;
+  color:black;
+}
+
+/*Author name for quotes in navbar top/Index Page*/
+.author{
+  color:darkgrey;
+}
+
+/*Slideshow for Quotes in navbar top/Index Page*/
+/*.quotes-slideshow {
+  display: block;
+  margin-top:20px;
+  margin:auto;
+  margin-bottom:60px;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+}
+
+.quotes-slideshow > div {
+  position: absolute;
+  top:10px;
+  left:10px;
+  right: 10px;
+  bottom: 10px;
+}*/
 
 blockquote {
   margin: 0 0 1rem;
@@ -549,7 +585,7 @@ mark,
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  color:white;
+  color:black;
 }
 
 .blockquote-footer {
@@ -3953,6 +3989,7 @@ tbody.collapse.show {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+  font-size: 10px;
 }
 
 .nav-tabs .nav-link {
@@ -3999,6 +4036,7 @@ tbody.collapse.show {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   text-align: center;
+
 }
 
 .nav-justified .nav-item {
@@ -4017,6 +4055,10 @@ tbody.collapse.show {
 .tab-content > .active {
   display: block;
 }
+.quiz
+{
+  margin-left:25px;
+}
 
 .navbar {
   position: relative;
@@ -4032,6 +4074,7 @@ tbody.collapse.show {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  border-radius: 100px;
 }
 
 .navbar > .container,
@@ -4073,9 +4116,8 @@ tbody.collapse.show {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 0;
-  margin-bottom: 0;
+  margin:auto;
   list-style: none;
-  flex
 }
 
 .navbar-nav .nav-link {
@@ -4539,6 +4581,11 @@ tbody.collapse.show {
 /*Border for Navbar*/
 li.nav-item:not(:last-child){
   border-right:1px solid white;
+}
+
+li.nav-item {
+  margin-bottom:auto;
+  margin-top: auto;
 }
 
 .card {
@@ -9086,4 +9133,16 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important;
   }
 }
+
+/*Color:White for Icons in Contact Page*/
+i.fa-youtube,i.fa-facebook,i.fa-instagram,i.fa-twitter {
+  color:White;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 30px;
+  margint-bottom:40px;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

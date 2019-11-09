@@ -1,112 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <script src="js/.js"></script>
-    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
+<head>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <script src="js/bootstrap.js"></script>
+  <script src="jquery-3.4.1.min.js"> </script>
+  <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
     <title>Your Space Guide-Overview!</title>
-  </head>
+</head>
 
   <body>
-
-    <header>
-      <div class="container">
-        <h1 class="index-heading"> Welcome to your Space-Guide</h1>
-        <hr class="hr-index-heading">
-      </div>
-
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="Page 1.html" > Our Solar System and Planets</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item active" style="color:white" href="Page 1.html#SolarSystem">Solar System</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="Page 1.html#Sun">Sun</a>
-                <a class="dropdown-item" href="Page 1.html#Mercury">Mercury</a>
-                <a class="dropdown-item" href="Page 1.html#Venus">Venus</a>
-                <a class="dropdown-item" href="Page 1.html#Earth">Earth</a>
-                <a class="dropdown-item" href="Page 1.html#Mars">Mars</a>
-                <a class="dropdown-item" href="Page 1.html#Jupiter">Jupiter</a>
-                <a class="dropdown-item" href="Page 1.html#Saturn">Saturn</a>
-                <a class="dropdown-item" href="Page 1.html#Uranus">Uranus</a>
-                <a class="dropdown-item" href="Page 1.html#Neptune">Neptune</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Page 2.html">Galaxies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Page 3.html">Stars and Star Constelations</a>
-            </li>
-            <a class="navbar-brand" href="index.html"> <img src="Media/Astronaut.jpg" width="40"; height="40" alt="Astronaut Logo"> <br> Home</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <li class="nav-item">
-              <a class="nav-link" href="Page 4.html">Nebula</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Page 5.html">Black Holes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Page 6.html">Exoplanets and Brown Dwarfs</a>
-            </li>
-          </ul>
-
-          <a href="Page 7.html" class="quiz">
-          <button class="btn" type="button">
-            <i class="far fa-lightbulb"></i> Quiz
-          </button>
-        </a>
+    <header >
+        <div style="text-align:center">
+          <h1 class="index-heading"> Welcome to your Space-Guide</h1>
+          <hr class="hr-index-heading" style="color:white">
         </div>
-        </nav>
-      </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <div class="container-fluid">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="Page 1.html" > Our Solar System and Planets</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item active" style="color:white" href="Page 1.html#SolarSystem">Solar System</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="Page 1.html#Sun">Sun</a>
+                  <a class="dropdown-item" href="Page 1.html#Mercury">Mercury</a>
+                  <a class="dropdown-item" href="Page 1.html#Venus">Venus</a>
+                  <a class="dropdown-item" href="Page 1.html#Earth">Earth</a>
+                  <a class="dropdown-item" href="Page 1.html#Mars">Mars</a>
+                  <a class="dropdown-item" href="Page 1.html#Jupiter">Jupiter</a>
+                  <a class="dropdown-item" href="Page 1.html#Saturn">Saturn</a>
+                  <a class="dropdown-item" href="Page 1.html#Uranus">Uranus</a>
+                  <a class="dropdown-item" href="Page 1.html#Neptune">Neptune</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Page 2.html">Galaxies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Page 3.html">Stars and Star Constelations</a>
+              </li>
+              <a href="index.html">
+                <button class="btn" width="45" height="45" border-radius="10px">
+                  <img src="Media/Astronaut.jpg" width="40"; height="40" alt="Astronaut Logo">Home</a>
+                </button>
+              <li class="nav-item">
+                <a class="nav-link" href="Page 4.html">Nebula</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Page 5.html">Black Holes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Page 6.html">Exoplanets and Brown Dwarfs</a>
+              </li>
+            </ul>
+
+            <a href="Page 7.html" class="quiz">
+            <button class="btn" type="button">
+              <i class="far fa-lightbulb"></i> Quiz
+            </button>
+          </a>
+          </div>
+          </nav>
     </header>
 
     <main>
       <div class="quotes-slideshow">
 
         <div class="quotes">
-           <q style="color:#ffffffb3"> We choose to go to the moon. We choose to go to the moon in this decade... not because they are easy but because they are hard</q>
-           <p class="author">- John F. Kennedy, 1962  </p>
+           <q>We choose to go to the moon. We choose to go to the moon in this decade... not because they are easy but because they are hard</q>
+           <p class="author">- John F. Kennedy </p>
         </div>
 
         <div class="quotes">
-          <q style="color:#ffffffb3"> Only two things are infinite, the universe and human stupidity, and I'm not sure about the former.</q>
+          <q>Only two things are infinite, the universe and human stupidity, and I'm not sure about the former.</q>
           <p class="author">- Albert Einstein </p>
         </div>
 
         <div class="quotes">
-          <q style="color:#ffffffb3"> Astronomy taught us our insignificance in Nature.</q>
+          <q>Astronomy taught us our insignificance in Nature.</q>
           <p class="author">- Ralph Waldo Emerson </p>
         </div>
 
         <div class="quotes">
-          <q style="color:#ffffffb3"> Space is for everybody. It’s not just for a few people in science or math, or for a select group of astronauts. That’s our new frontier out there, and it’s everybody’s business to know about space.</q>
+          <q>Space is for everybody. It’s not just for a few people in science or math, or for a select group of astronauts. That’s our new frontier out there, and it’s everybody’s business to know about space.</q>
           <p class="author">- Christa McAuliffe </p>
         </div>
-
       </div>
 
-      <div class="container">
         <div class="row">
-          <div class="col-sm">
-            <img src="Media/Solar System.jpeg" alt="Solar System">
+          <div class="column">
+            <img src="Media/Solar System.jpeg" alt="Solar System" Style="widht:100%">
           </div>
-          <div class="col-sm">
-            <img src="Media/Milky Way.jfif" alt="Milky Way">
+          <div class="column">
+            <img src="Media/Milky Way.jfif" alt="Milky Way" Style="widht:100%">
           </div>
-          <div class="col-sm">
-            <img src="Media/Nebula.jpg" alt="Nebula">
+          <div class="column">
+            <img src="Media/Nebula.jpg" alt="Nebula" Style="widht:100%">
           </div>
-          <div class="col-sm">
-            <img src="Media/Star Cluster.jpg" alt="Star Cluster">
+          <div class="column">
+            <img src="Media/Star Cluster.jpg" alt="Star Cluster" Style="widht:100%">
           </div>
-        </div>
       </div>
             <h5>Milky Way</h5>
             <p>Our Solar System is in the Milky Way. The Milky Way is a Spiral Galaxy.
@@ -131,19 +126,12 @@
         continuing with our solar system <i class="fas fa-sun"></i> <i class="fas fa-meteor"></i>, <br>
         going beyond deep space to the infinity of our universe <i class="fas fa-star"></i>. <br>
         </p>
-        <p>
-        For any further information or questions
-        <p>
-          <div class="astro-gif"><iframe src="https://giphy.com/embed/Js7cqIkpxFy0bILFFA" class="giphy-embed" ></iframe></div>
-          <br>
-          <a href="https://www.esa.int"><code style="color:#e83e8c"> >Go and visit the ESA Website< </code> </h3> </a>
-      </p>
     </div>
   </main>
 
 
     <footer>
-      <nav class="navbar sticky-bottom navbar-light">
+      <nav class="sticky-bottom navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <ul class="navbar-nav mr-auto " id="bottom">
             <li class="nav-item"> <a class="nav-link" href="Page 9.html">Contact</a> </li>
@@ -157,10 +145,8 @@
         <p> ©2019 Melissa Wise/Code First:Girls UK </p>
         <br>
         <p> <img style="background:transparent" src="Media/Code First Girls.png" alt="Code First:Girls">
-    </div>
-  </footer>
-
-
+      </div>
+    </footer>
   </body>
 
 </html>
