@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
           <div class="container-fluid">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="Page 1.html" > Our Solar System and Planets</a>
+              <li class="dropdown"> <a class="nav-link dropdown-toggle" href="Page 1.html" > Our Solar System and Planets</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item active" style="color:white" href="Page 1.html#SolarSystem">Solar System</a>
                   <div class="dropdown-divider"></div>
@@ -41,10 +41,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="Page 3.html">Stars and Star Constelations</a>
               </li>
-              <a href="index.html">
-                <button class="btn" width="45" height="45" border-radius="10px">
+              <li class="nav-item logo-home">
+              <a class="nav-link" href="index.html" style="border-radius:100px">
                   <img src="Media/Astronaut.jpg" width="40"; height="40" alt="Astronaut Logo">Home</a>
-                </button>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="Page 4.html">Nebula</a>
               </li>
@@ -64,10 +64,9 @@
           </div>
           </nav>
     </header>
-
+    <br>
     <main>
       <div class="quotes-slideshow">
-
         <div class="quotes">
            <q>We choose to go to the moon. We choose to go to the moon in this decade... not because they are easy but because they are hard</q>
            <p class="author">- John F. Kennedy </p>
@@ -89,20 +88,21 @@
         </div>
       </div>
 
-        <div class="row">
-          <div class="column">
-            <img src="Media/Solar System.jpeg" alt="Solar System" Style="widht:100%">
+      <div class="image-slideshow">
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="Media/Solar System.jpeg" alt="Solar System" style="width: 18rem; height: 12rem;">
           </div>
-          <div class="column">
-            <img src="Media/Milky Way.jfif" alt="Milky Way" Style="widht:100%">
+          <div class="card">
+            <img class="card-img-top" src="Media/Milky Way.jfif" alt="Milky Way" style="width: 18rem; height: 12rem;">
           </div>
-          <div class="column">
-            <img src="Media/Nebula.jpg" alt="Nebula" Style="widht:100%">
+          <div class="card">
+            <img class="card-img-top" src="Media/Nebula.jpg" alt="Nebula" style="width: 18rem; height: 12rem;">
           </div>
-          <div class="column">
-            <img src="Media/Star Cluster.jpg" alt="Star Cluster" Style="widht:100%">
+          <div class="card">
+            <img class="card-img-top" src="Media/Star Cluster.jpg" alt="Star Cluster" style="width: 18rem; height: 12rem;">
           </div>
-      </div>
+        </div>
             <h5>Milky Way</h5>
             <p>Our Solar System is in the Milky Way. The Milky Way is a Spiral Galaxy.
               <br>
@@ -114,11 +114,11 @@
 
             <h5>Supernova</h5>
             <p>A Supernova happens when a star collapses, also called a dying star.</p>
+          </div>
+        </div>
 
-
-    <div style="text-align:center">
-      <p class="About">
-
+    <div class= "about" style="text-align:center">
+      <p>
         <h1>About </h1>
         <hr>
         <h2> This Website is here to tell you all you need to now about space! </h2> <br>
@@ -131,7 +131,7 @@
 
 
     <footer>
-      <nav class="sticky-bottom navbar-expand-lg navbar-light">
+      <nav class="sticky-bottom navbar-expand-lg navbar-light align-content-center">
         <div class="container-fluid">
           <ul class="navbar-nav mr-auto " id="bottom">
             <li class="nav-item"> <a class="nav-link" href="Page 9.html">Contact</a> </li>
