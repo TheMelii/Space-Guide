@@ -3,6 +3,31 @@
   * Copyright 2011-2018 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
+
+	$('#carousel-example').on('slide.bs.carousel', function (e) {
+	    /*
+	        CC 2.0 License Iatek LLC 2018 - Attribution required
+	    */
+	    var $e = $(e.relatedTarget);
+	    var idx = $e.index();
+	    var itemsPerSlide = 5;
+	    var totalItems = $('.carousel-item').length;
+
+	    if (idx >= totalItems-(itemsPerSlide-1)) {
+	        var it = itemsPerSlide - (totalItems - idx);
+	        for (var i=0; i<it; i++) {
+	            // append slides to end
+	            if (e.direction=="left") {
+	                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+	            }
+	            else {
+	                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+	            }
+	        }
+	    }
+	});
+
+
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
 	typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
