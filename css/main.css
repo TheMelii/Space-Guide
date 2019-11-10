@@ -102,8 +102,10 @@ header {
   margin-left: 150px;
   margin-right: 150px;
   padding-top: 10px;
-  background-color:#ffffff33;
-  border-radius: ;
+  border-bottom: 2px;
+  border-style:solid;
+  border-width: thick;
+  border-color:#ffffff33;
 }
 
 /*main*/
@@ -118,27 +120,114 @@ main {
 /*footer*/
 footer {
   margin-top:20px;
-  margin-bottom: 0px;
-  left:0;
-  right:0;
+  margin-bottom: 15px;
+  margin-left: 150px;
+  margin-right: 150px;
   align-content: center;
   color:white;
-  bottom:0;
+  padding-bottom:2px;
   text-align: center;
   background-color:#ffffff33;
 }
 
-.which{
+#section1{
+  height:100vh;
+  size:cover;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
+#section2 a {
+  padding-top: 50px;
+  position: absolute;
+  bottom:5px;
+  left: 50%;
+}
+
+#section2.demo{
+  margin-bottom:0;
+  padding-bottom:0;
+}
+#section2 a span {
+  position: absolute;
+  bottom:15px;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+#section2 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#section2 a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .quotes-slideshow{
   margin-bottom: 30px;
 }
 
-.about{
+#section3{
   margin-top: 10px;
   padding-top: 10px;
+  height:100vh;
 }
 
 .container p-t-3{
@@ -6104,7 +6193,7 @@ button.close {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index:-1;
         display: block;
         visibility: visible;
     }
@@ -6380,6 +6469,110 @@ button.close {
   padding-bottom: 5px;
   color: #fff;
   text-align: center;
+}
+
+/* carousel */
+#quote-carousel
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px 0px 0px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+      margin-top: 30px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .align-baseline {

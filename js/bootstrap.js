@@ -4,6 +4,22 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 
+	// When the DOM is ready, run this function
+$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+		pauseOnHover: true,
+    interval: 4500,
+  });
+    });
+
+	$(function() {
+	  $('a[href*=#]').on('click', function(e) {
+	    e.preventDefault();
+	    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	  });
+	});
+
 	$('#carousel-example').on('slide.bs.carousel', function (e) {
 	    /*
 	        CC 2.0 License Iatek LLC 2018 - Attribution required
