@@ -16,7 +16,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
-            <li class="dropdown"> <a class="nav-link dropdown-toggle" href="Page 1.html" >Our Solar System and Planets <i class="fas fa-sun"> </i></a>
+            <li class="dropdown"> <a class="nav-link dropdown-toggle" href="Page 1.html" >Our Solar System and Planets</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item active" style="color:white" href="Page 1.html#SolarSystem">Solar System</a>
                 <div class="dropdown-divider"></div>
@@ -61,21 +61,23 @@
         </nav>
     </header>
     <main>
-    <div class="map">
-      <img class="solar-system-map" src="Media/Solar System.jpeg" width="80%" height="50%" alt="Solar System" usemap="#solarsystemmap">
-      <map name="solarsystemmap">
-        <area shape="poly" alt="Sun" href="#Sun" coords="1,144,20,156,42,180,64,216,75,243,85,277,91,302,94,333,93,370,85,399,73,444,48,485,33,498,20,498,1,498,4,169,-1,307,3,257,0,228">
-        <area shape="circle" alt="Mercury" href="#Mercury" coords="120,216,8">
-        <area shape="circle" alt="Venus" href="#Venus" coords="151,202,11">
-        <area shape="circle" alt="Earth" href="#Earth" coords="188,184,14">
-        <area shape="circle" alt="Mars" href="#Mars" coords="222,170,10">
-        <area shape="circle" alt="Jupiter" href="#Jupiter" coords="403,305,60">
-        <area shape="poly" alt="Saturn" href="#Saturn" coords="484,237,506,225,521,216,534,199,548,192,558,187,573,187,581,188,589,193,595,193,606,190,616,189,625,189,637,186,649,188,660,194,660,203,654,212,643,221,630,228,621,233,613,238,605,241,601,250,593,257,581,263,573,266,560,269,549,269,541,262,527,266,512,266,505,268,494,269,481,269,472,268,465,257,469,248,473,243,492,231">
-        <area shape="poly" alt="Uranus" href="#Uranus" coords="681,166,685,154,690,146,698,145,698,132,701,127,704,121,707,126,712,133,713,142,717,146,723,155,728,161,731,171,729,182,722,191,716,194,709,197,710,204,709,213,703,217,698,205,695,196,687,189,681,178">
-        <area shape="circle" alt="Neptune" href="#Neptune" coords="779,136,24">
-      </map>
-    </div>
-
+      <section id="section1">
+        <div class="map">
+          <img class="solar-system-map" src="Media/Solar System.jpeg" width="80%" height="50%" alt="Solar System" usemap="#solarsystemmap">
+          <map name="solarsystemmap">
+            <area shape="poly" alt="Sun" href="#Sun" coords="1,144,20,156,42,180,64,216,75,243,85,277,91,302,94,333,93,370,85,399,73,444,48,485,33,498,20,498,1,498,4,169,-1,307,3,257,0,228">
+            <area shape="circle" alt="Mercury" href="#Mercury" coords="120,216,8">
+            <area shape="circle" alt="Venus" href="#Venus" coords="151,202,11">
+            <area shape="circle" alt="Earth" href="#Earth" coords="188,184,14">
+            <area shape="circle" alt="Mars" href="#Mars" coords="222,170,10">
+            <area shape="circle" alt="Jupiter" href="#Jupiter" coords="403,305,60">
+            <area shape="poly" alt="Saturn" href="#Saturn" coords="484,237,506,225,521,216,534,199,548,192,558,187,573,187,581,188,589,193,595,193,606,190,616,189,625,189,637,186,649,188,660,194,660,203,654,212,643,221,630,228,621,233,613,238,605,241,601,250,593,257,581,263,573,266,560,269,549,269,541,262,527,266,512,266,505,268,494,269,481,269,472,268,465,257,469,248,473,243,492,231">
+            <area shape="poly" alt="Uranus" href="#Uranus" coords="681,166,685,154,690,146,698,145,698,132,701,127,704,121,707,126,712,133,713,142,717,146,723,155,728,161,731,171,729,182,722,191,716,194,709,197,710,204,709,213,703,217,698,205,695,196,687,189,681,178">
+            <area shape="circle" alt="Neptune" href="#Neptune" coords="779,136,24">
+          </map>
+      </div>
+    </section>
+    <section id="section2p1">
 <div class="maintextsolarsystem">
   <div id="SolarSystem">
 <h2> Solar System </h2>
@@ -87,11 +89,20 @@ It's the biggest Star in our Solar System.
 </div>
 
     <div class="maintextplanets">
-
-    <div id="Sun">
-      <p> <h2> The Sun </h2> </p>
-      <p> The Sun is the center of our Solar System </p>
+      <div id="Sun" class="card w-75 mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img style="background-color:transparent" src="Media/Sun.jpg" class="card-img" alt="Sun">
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">The Sun</h5>
+        <p class="card-text">The Sun is the center of our Solar System.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
 
     <div id="Mercury">
       <p> <h2> Mercury </h2> </p>
@@ -133,6 +144,7 @@ It's the biggest Star in our Solar System.
       <p>  </p>
     </div>
   </div>
+</section>
     </main>
     <footer>
       <nav class="sticky-bottom navbar-expand-lg navbar-light align-content-center">
