@@ -238,6 +238,10 @@ footer {
   margin-top: 10px;
   padding-top: 10px;
   height:100vh;
+  background-image: url(../Media/Milky Way.jpg);
+  background-size:cover;
+  background-position:center;
+  background-attachment: fixed;
 }
 
 .container p-t-3{
@@ -4818,7 +4822,7 @@ li.nav-item {
 }
 
 .card-img{
-  width:200px;
+  width:250px;
   height:100%;
   background-color:transparent;
   background:transparent;
