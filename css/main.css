@@ -230,8 +230,9 @@ footer {
   border-style: none;
 }
 
-.quotes-slideshow{
-  margin-bottom: 30px;
+.quotes-content{
+  padding:0;
+
 }
 
 #section3{
@@ -859,7 +860,7 @@ pre code {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
+  padding-right: 10px;
   padding-left: 15px;
 }
 
