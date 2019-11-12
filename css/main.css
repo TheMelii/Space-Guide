@@ -4634,6 +4634,7 @@ li.dropdown{
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: #6FA8C7;
+  text-transform: uppercase;
 }
 
 .navbar-light .navbar-nav .nav-link {
