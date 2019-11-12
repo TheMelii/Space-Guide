@@ -432,7 +432,7 @@ img {
 }
 
 .solar-system-map{
-  width:100%
+  width:95%
 }
 
 svg:not(:root) {
@@ -641,6 +641,11 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
   color:white;
+}
+
+.YourSpaceGuideLogo{
+  color:white;
+  font-size: 1.5rem;
 }
 
 .lead {
@@ -4746,13 +4751,13 @@ li.nav-item {
 }
 
 
-#Sun #Venus #Mars #Saturn #Neptune{
+#Sun #Venus #Mars #Saturn #Neptune #Pluto #MakeMake{
   margin-right:30px;
   padding:5px;
 }
 
 
-#Mercury #Earth #Jupiter #Uranus{
+#Mercury #Earth #Jupiter #Uranus #Ceres #Haumea #Eris{
   margin-left:30px;
   padding:5px;
 }
@@ -7078,6 +7083,37 @@ button.bg-dark:focus {
   display: block;
   content: "";
 }
+
+
+iframe{
+  align-items:left;
+}
+
+.p-0-3{
+  background-image: url("../Media/Astronomer.jpg");
+  height:10%;
+  background-repeat: no-repeat;
+  background-width: 375px;
+  background:height: 215px;
+}
+
+.p-4-6{
+  height:10%;
+  background-image:url("../Media/Astronaut2.jfif");
+  background-width: 375px;
+  background-height:215px;
+  background-repeat:no-repeat;
+}
+
+.p-7-10{
+  height:10%;
+  background-image:url("../Media/Dr Who.jpg");
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-width: 275px;
+  background-height:220px;
+}
+
 
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
