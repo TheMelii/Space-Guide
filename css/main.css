@@ -236,13 +236,9 @@ footer {
 }
 
 #section3{
-  margin-top: 10px;
-  padding-top: 10px;
   height:100vh;
-  background-image: url(../Media/Milky Way.jpg);
-  background-size:cover;
-  background-position:center;
-  background-attachment: fixed;
+  padding-top:10%;
+
 }
 
 .container p-t-3{
@@ -435,6 +431,10 @@ img {
   border-style: none;
 }
 
+.solar-system-map{
+  width:100%
+}
+
 svg:not(:root) {
   overflow: hidden;
 }
@@ -610,10 +610,12 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 1.75rem;
+  color: #6FA8C7
 }
 
 h4, .h4 {
   font-size: 1.5rem;
+  color: #6FA8C7
 }
 
 h5, .h5 {
@@ -861,7 +863,7 @@ pre code {
   width: 100%;
   min-height: 1px;
   padding-right: 10px;
-  padding-left: 15px;
+  
 }
 
 .col {
@@ -1149,7 +1151,7 @@ pre code {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 100%;
   }
   .col-sm-7 {
     -webkit-box-flex: 0;
@@ -4756,6 +4758,7 @@ li.nav-item {
   border-color:#ffffff33;
   border-style: solid;
   border-width: medium;
+  padding:10px;
 }
 
 .card > hr {
