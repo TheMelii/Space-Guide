@@ -4,42 +4,19 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 
-  function toggle_visibility (){
-    var x = document.hideElementById("Pluto");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "none";
-    }
-  }
 
-$(document).ready(function() {
-  //Set the carousel options
-  $('#quote-carousel').carousel({
-		pauseOnHover: true,
-    interval: 4500,
-  });
-    });
 
-	$(function() {
-	  $('a[href*=#]').on('click', function(e) {
-	    e.preventDefault();
-	    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-	  });
-	});
 
-	$('#carousel-example').on('slide.bs.carousel', function (e) {
-	    /*
-	        CC 2.0 License Iatek LLC 2018 - Attribution required
-	    */
+
+	$('#carousel-index').on('slide.bs.carousel', function (e) {
+
 	    var $e = $(e.relatedTarget);
 	    var idx = $e.index();
-	    var itemsPerSlide = 5;
-	    var totalItems = $('.carousel-item').length;
+	    var itemsPerSlide = 4;
+	    var totalItems = $('.carousel-item').infinite;
 
-	    if (idx >= totalItems-(itemsPerSlide-1)) {
-	        var it = itemsPerSlide - (totalItems - idx);
-	        for (var i=0; i<it; i++) {
+
+
 	            // append slides to end
 	            if (e.direction=="left") {
 	                $('.carousel-item').eq(i).appendTo('.carousel-inner');
@@ -49,7 +26,7 @@ $(document).ready(function() {
 	            }
 	        }
 	    }
-	});
+	);
 
 
 (function (global, factory) {
