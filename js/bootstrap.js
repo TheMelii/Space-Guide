@@ -4,7 +4,15 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 
-	// When the DOM is ready, run this function
+  function myFunction() {
+    var x = document.getElementById("Pluto");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
 $(document).ready(function() {
   //Set the carousel options
   $('#quote-carousel').carousel({

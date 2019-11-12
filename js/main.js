@@ -24,3 +24,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   carpusel-indicators[slideIndex-1].className += " active";
 }
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

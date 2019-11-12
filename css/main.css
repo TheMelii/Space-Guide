@@ -460,6 +460,13 @@ label {
   margin-bottom: .5rem;
 }
 
+.more{
+  border-radius:100%;
+  border-color: #6c757d;
+  border-width: medium;
+  border-style: solid;
+}
+
 button {
   border-radius: 0;
 }
@@ -863,7 +870,7 @@ pre code {
   width: 100%;
   min-height: 1px;
   padding-right: 10px;
-  
+
 }
 
 .col {
