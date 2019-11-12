@@ -4,10 +4,10 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 
-  function myFunction() {
-    var x = document.getElementById("Pluto");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+  function toggle_visibility (){
+    var x = document.hideElementById("Pluto");
+    if (x.style.display === "block") {
+      x.style.display = "none";
     } else {
       x.style.display = "none";
     }

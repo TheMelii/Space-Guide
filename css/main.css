@@ -467,6 +467,14 @@ label {
   border-style: solid;
 }
 
+.hidden{
+    display:none;
+}
+
+.unhidden{
+    display:block;
+}
+
 button {
   border-radius: 0;
 }
