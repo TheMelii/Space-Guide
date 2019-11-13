@@ -190,8 +190,13 @@ footer {
   animation: sdb03 3s infinite;
   box-sizing: border-box;
 }
-#section2p1{
+#section2p1 #section3 #section4{
   height:100vh;
+}
+
+#section3{
+  height:100vh;
+  margin-right:150px;
 }
 
 @-webkit-keyframes sdb03 {
@@ -431,8 +436,11 @@ img {
   border-style: none;
 }
 
-.solar-system-map{
-  width:95%
+
+img#solar-system-map{
+  margin-right:150px;
+  margin-bottom:100px;
+  height:90vh;
 }
 
 svg:not(:root) {

@@ -13,7 +13,7 @@
 	    var $e = $(e.relatedTarget);
 	    var idx = $e.index();
 	    var itemsPerSlide = 4;
-	    var totalItems = $('.carousel-item').infinite;
+	    var totalItems = $('.carousel-item').length; 
 
 
 
