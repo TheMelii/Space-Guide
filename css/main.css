@@ -438,8 +438,10 @@ img {
 
 
 img#solar-system-map{
-  margin-right:150px;
-  margin-bottom:100px;
+  margin-top:35px;
+  margin-right:100px;
+  margin-bottom:500px;
+
   height:90vh;
 }
 
