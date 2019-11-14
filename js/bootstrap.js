@@ -4,29 +4,17 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 
+	$(window).load(function() {
+            $(".carousel .item").each(function() {
+                var i = $(this).next();
+                i.length || (i = $(this).siblings(":first")),
+                  i.children(":first-child").clone().appendTo($(this));
 
-
-
-
-	$('#carousel-index').on('slide.bs.carousel', function (e) {
-
-	    var $e = $(e.relatedTarget);
-	    var idx = $e.index();
-	    var itemsPerSlide = 4;
-	    var totalItems = $('.carousel-item').length; 
-
-
-
-	            // append slides to end
-	            if (e.direction=="left") {
-	                $('.carousel-item').eq(i).appendTo('.carousel-inner');
-	            }
-							else {
-	                $('.carousel-item').eq(0).appendTo('.carousel-inner');
-	            }
-	        }
-	    }
-	);
+                for (var n = 0; n < 4; n++)(i = i.next()).length ||
+                  (i = $(this).siblings(":first")),
+                  i.children(":first-child").clone().appendTo($(this))
+            })
+        });
 
 
 (function (global, factory) {
@@ -580,9 +568,9 @@ var Carousel = function ($$$1) {
   var TOUCHEVENT_COMPAT_WAIT = 500; // Time for mouse compat events to fire after touch
 
   var Default = {
-    interval: 5000,
+    interval: 3000,
     keyboard: true,
-    slide: false,
+    slide: true,
     pause: 'hover',
     wrap: true
   };
@@ -643,7 +631,7 @@ var Carousel = function ($$$1) {
       this._interval = null;
       this._activeElement = null;
       this._isPaused = false;
-      this._isSliding = false;
+      this._isSliding = true;
       this.touchTimeout = null;
       this._config = this._getConfig(config);
       this._element = $$$1(element)[0];

@@ -4760,6 +4760,19 @@ li.nav-item {
   text-align:center;
 }
 
+.main3{
+  background-color: #0d1e4540;
+  background-clip: border-box;
+  border: 1px solid #ffffff33;
+  border-width: medium;
+  padding: 10px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.carousel3rd-page{
+  display:block;
+}
 
 #Sun #Venus #Mars #Saturn #Neptune #Pluto #MakeMake{
   margin-right:30px;
@@ -4784,9 +4797,7 @@ li.nav-item {
   word-wrap: break-word;
   background-color: #0d1e4540;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-color:#ffffff33;
-  border-style: solid;
+  border: 1px solid #ffffff33;
   border-width: medium;
   padding:10px;
 }
@@ -6419,8 +6430,7 @@ button.close {
   }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-prev {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -6432,11 +6442,32 @@ button.close {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: left;
   width: 15%;
   color: #fff;
   text-align: center;
   opacity: 0.5;
+  margin:-1%;
+}
+
+.carousel-control-next {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: left;
+  width: 10%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  margin:-10%;
 }
 
 .carousel-control-prev:hover, .carousel-control-prev:focus,
