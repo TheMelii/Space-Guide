@@ -90,6 +90,8 @@ body {
   background-size:cover;
   background-position:center;
   background-attachment: fixed;
+  margin-bottom:80px;
+  padding-bottom:60px;
 }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -196,7 +198,8 @@ footer {
 
 #section3{
   height:100vh;
-  margin-right:150px;
+  padding-top:10%;
+  text-align: center;
 }
 
 @-webkit-keyframes sdb03 {
@@ -237,13 +240,7 @@ footer {
 
 .quotes-content{
   padding:0;
-
-}
-
-#section3{
-  height:100vh;
-  padding-top:10%;
-
+  position:absolute;
 }
 
 .container p-t-3{
