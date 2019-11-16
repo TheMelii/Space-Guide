@@ -117,7 +117,6 @@ main {
   margin-bottom:15px;
   margin-left: 150px;
   margin-right: 150px;
-
 }
 
 /*footer*/
@@ -140,20 +139,31 @@ footer {
   padding: 0;
 }
 
-#section2 a {
-  padding-top: 50px;
-  position: absolute;
-  bottom:5px;
-  left: 50%;
+.demo a {
+  position: sticky;
+  padding-top:5px;
+  bottom: 0;
+  left: 45%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .75;
 }
 
-#section2.demo{
-  margin-bottom:0;
-  padding-bottom:0;
+#section03 a {
+  padding-top: 100px;
 }
-#section2 a span {
+#section03 a span {
   position: absolute;
-  bottom:15px;
+  top: 50px;
   left: 50%;
   width: 46px;
   height: 46px;
@@ -162,8 +172,7 @@ footer {
   border-radius: 100%;
   box-sizing: border-box;
 }
-
-#section2 a span::after {
+#section03 a span::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -177,7 +186,7 @@ footer {
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
-#section2 a span::before {
+#section03 a span::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -192,16 +201,6 @@ footer {
   animation: sdb03 3s infinite;
   box-sizing: border-box;
 }
-#section2p1 #section3 #section4{
-  height:100vh;
-}
-
-#section3{
-  height:100vh;
-  padding-top:10%;
-  text-align: center;
-}
-
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0;
@@ -231,6 +230,16 @@ footer {
   100% {
     opacity: 0;
   }
+}
+
+#section2p1 #section3 #section4{
+  height:100vh;
+}
+
+#section3{
+  height:100vh;
+  text-align: center;
+  padding-top:100px;
 }
 
 .giphy-embed
@@ -409,7 +418,6 @@ img#solar-system-map{
   margin-top:35px;
   margin-right:100px;
   margin-bottom:500px;
-
   height:90vh;
 }
 
@@ -3667,7 +3675,7 @@ li.dropdown{
 }
 
 .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group-vertical > .btn-group:not(:last-child) > .btn {
+.btn-group-vertical > .btn-group > .btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -4713,14 +4721,13 @@ li.dropdown{
 }
 
 /*Border for Navbar*/
-/*li.nav-item:not(:last-child){
+li.nav-item:not(:last-child):not(.logo-home){
   border-right:1px solid white;
 }
 
-li.dropdown{
-  border-right:1px solid white;
-  text-align: center;
-}*/
+li.nav-item#black-holes-nav-item{
+  border-left:1px solid white;
+}
 
 li.nav-item {
   margin-bottom:auto;
