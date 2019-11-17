@@ -1957,7 +1957,7 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #dee2e6;
+  border: medium solid #ffffff33;
 }
 
 .table-bordered th,
@@ -2120,9 +2120,10 @@ pre code {
 }
 
 .table .thead-light th {
-  color: #495057;
-  background-color: #e9ecef;
-  border-color: #dee2e6;
+  color: #6FA8C7;
+  background-color: transparent;
+  border-color:#ffffff33;
+  border-width: thick;
 }
 
 .table-dark {
@@ -4738,7 +4739,7 @@ li.nav-item:not(:last-child):not(.logo-home){
   border-right:1px solid white;
 }
 
-li.nav-item#black-holes-nav-item{
+li.nav-item#exoplanets-nav-item{
   border-left:1px solid white;
 }
 
