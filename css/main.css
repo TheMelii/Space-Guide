@@ -6898,15 +6898,15 @@ iframe{
 }
 
 .p-0-3{
+  height:220px;
   background-image: url("../Media/Astronomer.jpg");
-  height:10%;
   background-repeat: no-repeat;
   background-width: 375px;
   background:height: 215px;
 }
 
 .p-4-6{
-  height:10%;
+  height:220px;
   background-image:url("../Media/Astronaut2.jfif");
   background-width: 375px;
   background-height:215px;
@@ -6914,12 +6914,11 @@ iframe{
 }
 
 .p-7-10{
-  height:10%;
+  height:220px;
   background-image:url("../Media/Dr Who.jpg");
-  background-size:100%;
+  background-width: 375px;
+  background-height:215px;
   background-repeat:no-repeat;
-  background-width: 275px;
-  background-height:220px;
 }
 
 
