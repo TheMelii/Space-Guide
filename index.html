@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
 
-<head>
-  <title>Your Space Guide!</title>
-  <meta charset="utf-8">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <title>Your Space Guide!</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152754096-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-152754096-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-152754096-1');
     </script>
 
-  <link href="css/main.css" rel="stylesheet" type="text/css">
-  <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="slick/slick.js"></script>
-  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-</head>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <!--Slick Slider-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!--Slick Slider-->
+    <script src="slick/slick.js"></script>
+
+    <!--Font Family and Favicon Icons-->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
 
   <body>
     <header>
       <div class="header-content" style="text-align:center">
-          <div class="row">
-            <div class="col-lg-12 index-heading">
-              <h1>Welcome to <div class="YourSpaceGuideLogo"><img src="Media/Astronaut.jpg" width="30"; height="30" alt="Astronaut Logo" style="border-radius:100px;text-align:center"> Your Space-Guide</div></h1>
-            </div>
+        <div class="row">
+          <div class="col-lg-12 index-heading">
+            <h1>Welcome to <div class="YourSpaceGuideLogo"><img src="Media/Astronaut.jpg" width="30"; height="30" alt="Astronaut Logo" style="border-radius:100px;text-align:center"> Your Space-Guide</div></h1>
           </div>
-          <div class="row">
-            <div class="col-lg-12 hr-index-heading" style="color:white">
-              <hr>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 hr-index-heading" style="color:white">
+            <hr>
           </div>
+        </div>
 
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="Page 1.html">Our Solar System</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Page 2.html">Galaxies</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Page 3.html">Stars and Star Cluster</a>
-                </li>
-                <li class="nav-item logo-home">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="Page 1.html">Our Solar System</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Page 2.html">Galaxies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Page 3.html">Stars and Star Cluster</a>
+              </li>
+              <li class="nav-item logo-home">
                 <a class="nav-link" href="index.html" style="border-radius:100px;font-size:1.5rem">
-                    <img src="Media/Astronaut.jpg" width="60"; height="60" alt="Astronaut Logo" style="border-radius:100px;text-align:center"><br>Home</a>
-                </li>
-                <li id="exoplanets-nav-item" class="nav-item">
-                  <a class="nav-link" href="Page 4.html">Exoplanets and Brown Dwarfs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Page 5.html">About</a>
-                </li>
-
+                  <img src="Media/Astronaut.jpg" width="60"; height="60" alt="Astronaut Logo" style="border-radius:100px;text-align:center"><br>Home
+                </a>
+              </li>
+              <li id="exoplanets-nav-item" class="nav-item">
+                <a class="nav-link" href="Page 4.html">Exoplanets and Brown Dwarfs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Page 5.html">About</a>
+              </li>
               <li class="nav-item">
                 <a href="Page 6.html" class="quiz">
                   <button class="btn" type="button">
@@ -73,43 +80,50 @@
         </nav>
       </div>
     </header>
-    <br>
+
     <main>
       <section id="section1">
-      <div clas="which" style="text-align:center">
-        <b><h1 style="font-size:2.5rem">Which topic do you want to find out more about?</h1></b>
-      </div>
+        <div clas="which" style="text-align:center">
+          <b><h1 style="font-size:2.5rem">Which topic do you want to find out more about?</h1></b>
+        </div>
 
-      <section class="regular slider">
-        <div>
-          <a href="Page 3.html#Black Hole"><img src="Media/Black Hole.jpg">
-          <h3 style="color:white">Black Holes</h3></a>
-        </div>
-        <div>
-          <a href="Page 4.html"><img src="Media/Exoplanet.jpg">
-          <h3 style="color:white">Exoplanets</h3></a>
-        </div>
-        <div>
-          <a href="Page 2.html#section6"><img src="Media/Milky Way.jfif">
-          <h3 style="color:white">Milky Way</h3></a>
-        </div>
-        <div>
-          <a href="Page 3.html#Planetary Nebula"><img src="Media/Nebula.jpg">
-          <h3 style="color:white">Planetary Nebula</h3></a>
-        </div>
-        <div>
-          <a href="Page 1.html"><img src="Media/Solar System.jpeg">
-          <h3 style="color:white">Solar System</h3></a>
-        </div>
-        <div>
-          <a href="Page 3.html#StarCluster"><img src="Media/Globular Cluster.jpg">
-          <h3 style="color:white">Star Cluster</h3></a>
-        </div>
-        <div>
-          <a href="Page 3.html#Supernova"><img src="Media/Supernova.jfif">
-          <h3 style="color:white">Supernova</h3></a>
-        </div>
-      </section>
+        <section class="regular slider">
+          <div>
+            <a href="Page 3.html#Black Hole"><img src="Media/Black Hole.jpg">
+              <h3 style="color:white">Black Holes</h3>
+            </a>
+          </div>
+          <div>
+            <a href="Page 4.html"><img src="Media/Exoplanet.jpg">
+              <h3 style="color:white">Exoplanets</h3>
+            </a>
+          </div>
+          <div>
+            <a href="Page 2.html#section6"><img src="Media/Milky Way.jfif">
+              <h3 style="color:white">Milky Way</h3>
+            </a>
+          </div>
+          <div>
+            <a href="Page 3.html#Planetary Nebula"><img src="Media/Nebula.jpg">
+              <h3 style="color:white">Planetary Nebula</h3>
+            </a>
+          </div>
+          <div>
+            <a href="Page 1.html"><img src="Media/Solar System.jpeg">
+              <h3 style="color:white">Solar System</h3>
+            </a>
+          </div>
+          <div>
+            <a href="Page 3.html#StarCluster"><img src="Media/Globular Cluster.jpg">
+              <h3 style="color:white">Star Cluster</h3>
+            </a>
+          </div>
+          <div>
+            <a href="Page 3.html#Supernova"><img src="Media/Supernova.jfif">
+              <h3 style="color:white">Supernova</h3>
+            </a>
+          </div>
+        </section>
 
         <section id="section03" class="demo">
           <div class="scrolldown">
@@ -120,7 +134,6 @@
 
       <section id="section3">
         <div class="container quotes-content text-center">
-
           <div class="quote1"><!--Quote 1-Kennedy-->
             <blockquote>
               <div class="row text-left">
@@ -129,7 +142,7 @@
                 </div>
                 <div class="col-sm-10">
                   <p>We choose to go to the moon. We choose to go to the moon in this decade... not because they are easy but because they are hard</p>
-                    <small>-John F. Kennedy</small>
+                  <small>-John F. Kennedy</small>
                 </div>
               </div>
             </blockquote>
@@ -140,7 +153,7 @@
               <div class="row text-right">
                 <div class="col-sm-10">
                   <p>Only two things are infinite, the universe and human stupidity, and I'm not sure about the former.</p>
-                    <small>-Albert Einstein</small>
+                  <small>-Albert Einstein</small>
                 </div>
                 <div class="col-sm-2">
                   <img class="rounded-circle" src="Media/Einstein.jfif" style="width: 100px;height:100px;">
@@ -157,7 +170,7 @@
                 </div>
                 <div class="col-sm-10">
                   <p>Astronomy taught us our insignificance in Nature.</p>
-                    <small>-Ralph Waldo Emerson</small>
+                  <small>-Ralph Waldo Emerson</small>
                 </div>
               </div>
             </blockquote>
@@ -168,7 +181,7 @@
               <div class="row text-right">
                 <div class="col-sm-10">
                   <p>Space is for everybody. It’s not just for a few people in science or math, or for a select group of astronauts. That’s our new frontier out there, and it’s everybody’s business to know about space.</p>
-                    <small>-Christa McAuliffe</small>
+                  <small>-Christa McAuliffe</small>
                 </div>
                 <div class="col-sm-2">
                   <img class="rounded-circle" src="Media/McAuliffe.jfif" style="width: 100px;height:100px;">
@@ -178,16 +191,21 @@
           </div>
         </div>
       </section>
-
-  </main>
+    </main>
 
     <footer>
       <nav class="sticky-bottom navbar-expand-lg navbar-light align-content-center">
         <div class="container-fluid">
           <ul class="navbar-nav mr-auto " id="bottom">
-            <li class="nav-item"> <a class="nav-link" href="Page 7.html">Contact</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="Page 8.html">Privacy Policy</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="Page 9.html">Disclaimer</a> </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Page 7.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Page 8.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Page 9.html">Disclaimer</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -195,13 +213,12 @@
       <div class="copyright">
         <p> ©2019 Melissa Wise/Code First:Girls UK </p>
         <br>
-        <p> <img style="background:transparent" src="Media/Code First Girls.png" alt="Code First:Girls">
+        <p> <img style="background:transparent" src="Media/Code First Girls.png" alt="Code First:Girls"> </p>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
-
         $('.autoplay').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -209,8 +226,6 @@
         autoplaySpeed: 2000,
         });
       });
-
-  </script>
+    </script>
   </body>
-
 </html>
