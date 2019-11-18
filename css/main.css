@@ -423,9 +423,9 @@ img {
 
 img#solar-system-map{
   margin-top:35px;
-  margin-right:100px;
-  margin-bottom:500px;
-  height:90vh;
+  margin-bottom:200px;
+  margin-left:-40px;
+  padding-bottom:35px;
 }
 
 svg:not(:root) {
